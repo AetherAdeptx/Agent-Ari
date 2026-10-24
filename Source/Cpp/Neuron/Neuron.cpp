@@ -1,11 +1,14 @@
 #include "Neuron.h"
 
-Neuron::Neuron()
+namespace AgentAri
 {
-    //ctor
-}
+    Neuron::Neuron()
+    {
+        //ctor
+    }
 
-Neuron::~Neuron()
-{
-    //dtor
+    Neuron::~Neuron()
+    {
+        //dtor
+    }
 }

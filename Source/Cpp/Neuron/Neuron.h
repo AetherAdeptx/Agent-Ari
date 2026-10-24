@@ -1,9 +1,10 @@
 #ifndef NEURON_H
 #define NEURON_H
 
-
-class Neuron
+namespace AgentAri
 {
+    class Neuron
+    {
     public:
         Neuron();
         virtual ~Neuron();
@@ -11,6 +12,7 @@ class Neuron
     protected:
 
     private:
-};
+    };
+}
 
 #endif // NEURON_H
