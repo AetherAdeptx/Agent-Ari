@@ -5,6 +5,7 @@
 		<Option title="AgentAri" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="Source/Cpp/Hardware-Planner/" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/AgentAri" prefix_auto="1" extension_auto="1" />
@@ -13,6 +14,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../../../../../../home/Ari/Desktop/AgentAriProject/AgentAri/Source/Cpp/Neuron" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +24,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../../../../../../home/Ari/Desktop/AgentAriProject/AgentAri/Source/Cpp/Neuron" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -34,7 +37,15 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++17" />
 		</Compiler>
-		<Unit filename="Source/main.cpp" />
+		<Unit filename="Source/Cpp/Hardware-Planner/Hardware_Planner.cpp" />
+		<Unit filename="Source/Cpp/Hardware-Planner/Hardware_Planner.h" />
+		<Unit filename="Source/Cpp/Main/main.cpp" />
+		<Unit filename="Source/Cpp/Neuron/Neuron.cpp" />
+		<Unit filename="Source/Cpp/Neuron/Neuron.h" />
+		<Unit filename="Source/Cpp/Neuron/Neuron.h" />
+		<Unit filename="Source/Headers/Hardware_Planner.h">
+			<Option virtualFolder="Source/Cpp/Hardware-Planner/" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
