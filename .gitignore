@@ -1,0 +1,12 @@
+# Compiled executables and build artifacts
+/bin/
+/obj/
+
+# Code::Blocks generated files
+*.depend
+*.layout
+
+# Editor and operating system clutter
+*~
+.DS_Store
+Thumbs.db
