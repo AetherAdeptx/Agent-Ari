@@ -9,22 +9,30 @@ namespace AgentAri
 {
     struct NetworkProfile
     {
+        // Profile identity
         std::string profileName = "Test Profile";
-        std::string description = "Test Profile for building source.";
-        std::string filePath = "/home/Ari/Desktop/AgentAriProject/AgentAri/Scratchpad/";
+        std::string description =
+            "Test profile for AgentAri development.";
 
+        // Network size
         std::uint64_t neuronCount = 10'000'000;
-        std::uint32_t averageSynapsesPerNeuron = 256;
-        std::uint32_t layers = 28;
+
+        // Network composition
         double immutableNeuronRatio = 0.01;
 
-        std::uint32_t rateLimitCPU = 50;
+        // Processing limits
+        std::uint32_t rateLimitCPU = 75;
+
+        // Checkpoint management
         std::uint32_t checkpointFrequency = 500;
         std::uint32_t numCheckpoints = 5;
+
+        // Logging
         std::uint32_t logLevel = 3;
 
+        // Total allocated synapse capacity across the network
         std::uint64_t estimatedSynapseCount() const;
     };
 }
 
-#endif
+#endif // PROFILE_H
